@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier-Manufacturer | Wood Sofa Raw Materials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f1f3f6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #2874f0;
+            color: white;
+            padding: 12px 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            padding: 15px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            border-bottom: 1px solid #f0f0f0;
+            margin-bottom: 10px;
+        }
+
+        .product-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #212121;
+            margin-bottom: 8px;
+            height: 40px;
+            overflow: hidden;
+        }
+
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2874f0;
+            margin-bottom: 15px;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn-order {
+            background-color: #2874f0;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-order:hover {
+            background-color: #1a5bbf;
+        }
+
+        .btn-call {
+            background-color: #fb641b;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-call:hover {
+            background-color: #e05a17;
+        }
+
+        .call-info {
+            font-size: 12px;
+            color: #878787;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #172337;
+            color: white;
+            padding: 30px 0;
+            margin-top: 30px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+
+        .footer-section h3 {
+            font-size: 14px;
+            color: #878787;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #454d5e;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #878787;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Supplier-Manufacturer</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71W7ROr0JQL._AC_UF1000,1000_QL80_.jpg" alt="Premium Teak Wood" class="product-image">
+                <h3 class="product-title">Premium Teak Wood (Grade A)</h3>
+                <div class="product-price">₹1,250/sq.ft</div>
+                <div class="action-buttons">
+                    <button class="btn-order">Place Order</button>
+                    <button class="btn-call">Live Call</button>
+                    <p class="call-info">Make live call for negotiations</p>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/CS/IO/TA/3033603/rosewood-timber-500x500.jpg" alt="Rose Wood" class="product-image">
+                <h3 class="product-title">Rose Wood (First Quality)</h3>
+                <div class="product-price">₹1,800/sq.ft</div>
+                <div class="action-buttons">
+                    <button class="btn-order">Place Order</button>
+                    <button class="btn-call">Live Call</button>
+                    <p class="call-info">Make live call for negotiations</p>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71gHnQSmYrL._AC_UF1000,1000_QL80_.jpg" alt="Sheesham Wood" class="product-image">
+                <h3 class="product-title">Sheesham Wood (Solid Blocks)</h3>
+                <div class="product-price">₹950/sq.ft</div>
+                <div class="action-buttons">
+                    <button class="btn-order">Place Order</button>
+                    <button class="btn-call">Live Call</button>
+                    <p class="call-info">Make live call for negotiations</p>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/BN/GT/YK/3033603/rubber-wood-500x500.jpg" alt="Rubber Wood" class="product-image">
+                <h3 class="product-title">Rubber Wood (Kiln Dried)</h3>
+                <div class="product-price">₹650/sq.ft</div>
+                <div class="action-buttons">
+                    <button class="btn-order">Place Order</button>
+                    <button class="btn-call">Live Call</button>
+                    <p class="call-info">Make live call for negotiations</p>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/CS/IO/TA/3033603/rosewood-timber-500x500.jpg" alt="Plywood" class="product-image">
+                <h3 class="product-title">Marine Grade Plywood (18mm)</h3>
+                <div class="product-price">₹120/sq.ft</div>
+                <div class="action-buttons">
+                    <button class="btn-order">Place Order</button>
+                    <button class="btn-call">Live Call</button>
+                    <p class="call-info">Make live call for negotiations</p>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71W7ROr0JQL._AC_UF1000,1000_QL80_.jpg" alt="Upholstery Fabric" class="product-image">
+                <h3 class="product-title">Premium Upholstery Fabric</h3>
+                <div class="product-price">₹350/meter</div>
+                <div class="action-buttons">
+                    <button class="btn-order">Place Order</button>
+                    <button class="btn-call">Live Call</button>
+                    <p class="call-info">Make live call for negotiations</p>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/BN/GT/YK/3033603/rubber-wood-500x500.jpg" alt="Foam" class="product-image">
+                <h3 class="product-title">High Density Foam (HR 40)</h3>
+                <div class="product-price">₹180/sq.ft</div>
+                <div class="action-buttons">
+                    <button class="btn-order">Place Order</button>
+                    <button class="btn-call">Live Call</button>
+                    <p class="call-info">Make live call for negotiations</p>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71gHnQSmYrL._AC_UF1000,1000_QL80_.jpg" alt="Wood Polish" class="product-image">
+                <h3 class="product-title">Premium Wood Polish (1L)</h3>
+                <div class="product-price">₹450/bottle</div>
+                <div class="action-buttons">
+                    <button class="btn-order">Place Order</button>
+                    <button class="btn-call">Live Call</button>
+                    <p class="call-info">Make live call for negotiations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Policy</h3>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#">Email: contact@supplier-manufacturer.com</a></li>
+                    <li><a href="#">Phone: +91 76********</a></li>
+                    <li><a href="#">Address: JCE, Belagavi</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2023 Supplier-Manufacturer All Rights Reserved
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click event for order buttons
+            const orderButtons = document.querySelectorAll('.btn-order');
+            orderButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productTitle = this.closest('.product-card').querySelector('.product-title').textContent;
+                    alert(`Order placed for: ${productTitle}`);
+                });
+            });
+
+            // Add click event for call buttons
+            const callButtons = document.querySelectorAll('.btn-call');
+            callButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productTitle = this.closest('.product-card').querySelector('.product-title').textContent;
+                    alert(`Initiating live call for: ${productTitle}\nOur executive will call you shortly.`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
